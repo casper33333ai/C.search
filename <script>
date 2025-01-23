@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistent</title>
+    <style>
+        /* Voeg hier jouw CSS toe voor styling */
+        body { font-family: Arial, sans-serif; }
+        #chat-container { max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; }
+        .chat-message { margin: 5px 0; }
+        .user-message { color: blue; }
+        .bot-message { color: green; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 10px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Assistent</h1>
+    
+    <!-- Chatcontainer -->
+    <div id="chat-container"></div>
+    
+    <!-- Knop voor spraakherkenning -->
+    <button id="start-microphone">Start Microfoon</button>
+    
+    <!-- Planner Tabel -->
+    <h2>Leerplanner</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Dag</th>
+                <th>Nederlands</th>
+                <th>History</th>
+                <th>Duits</th>
+                <th>Frans</th>
+                <th>Engels</th>
+                <th>Geography</th>
+                <th>Wiskunde</th>
+                <th>Filosofie</th>
+                <th>Muziek</th>
+                <th>Economie</th>
+                <th>BSM</th>
+                <th>Bedrijfs Economie</th>
+                <th>Biologie</th>
+                <th>Science Physics</th>
+            </tr>
+        </thead>
+        <tbody id="planning-table-body">
+            <tr>
+                <td>Maandag</td>
+                <td data-subject="nederlands"></td>
+                <td data-subject="history"></td>
+                <td data-subject="duits"></td>
+                <td data-subject="frans"></td>
+                <td data-subject="engels"></td>
+                <td data-subject="geography"></td>
+                <td data-subject="wiskunde"></td>
+                <td data-subject="filosofie"></td>
+                <td data-subject="muziek"></td>
+                <td data-subject="economie"></td>
+                <td data-subject="bsm"></td>
+                <td data-subject="bedrijfs economie"></td>
+                <td data-subject="biologie"></td>
+                <td data-subject="science physics"></td>
+            </tr>
+            <!-- Herhaal dit voor de overige dagen -->
+        </tbody>
+    </table>
+    
+    <!-- Container voor maaltijdsuggesties -->
+    <h2>Maaltijdsuggesties</h2>
+    <div id="meal-suggestions"></div>
+    
+    <!-- JavaScript koppelen -->
+    <script src="script.js"></script>
+</body>
+</html>
